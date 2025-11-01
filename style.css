@@ -169,5 +169,10 @@ width: 100%;            /* ogni bottone si adatta alla colonna */
   .options {
     grid-template-columns: repeat(1,1fr);
   }
+  .result {
+      width: 90%;
 }
+.result img {
+    width: 100%;
+
 
