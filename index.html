@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Country Quiz | devChallenges.io</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   <main>
+    <section>
+       <div class="result">
+    <img src="./resources/congrats.png" alt="...">
+    <h3>Congrats! You completed the quiz.</h3>
+    <p>You answer <span class="final-score">0</span>/10 correctly</p>
+    <button class="restart">Play Again</button>
+</div>
+
+<div class="container">
+    <div class="flex">
+        <h1>Country Quiz</h1>
+        <div class="score-container">
+  <i>🏆</i> <span id="score">0</span>/10 Points
+   </div> 
+    </div>
+    <div class="quiz-container">
+        <div class="quiz">
+            <div class="numbers">
+            <span class="progress active">1</span>
+            <span class="progress">2</span>
+            <span class="progress">3</span>
+            <span class="progress">4</span>
+            <span class="progress">5</span>
+            <span class="progress">6</span>
+            <span class="progress">7</span>
+            <span class="progress">8</span>
+            <span class="progress">9</span>
+            <span class="progress">10</span>
+            </div>
+            <h3 class="question"></h3>
+            <div class="options">
+
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+   </main>
+   <script src="index.js"></script>
+  </body>
+</html>
