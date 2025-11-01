@@ -72,9 +72,9 @@ function showQuestion(index) {
       const allButtons = document.querySelectorAll('.option');
       allButtons.forEach(btn => btn.disabled = true);
       button.classList.add('active');
-      addIcon(document.getElementById(q.correct), '../resources/Check_round_fill.svg');
+      addIcon(document.getElementById(q.correct), '../resources/Check-round-fill.svg');
       if (option !== q.correct) {
-        addIcon(button, '../resources/Close_round_fill.svg');
+        addIcon(button, '../resources/Close-round-fill.svg');
       };
       if (option === q.correct) {
         scoreElem.innerText = Number(scoreElem.innerText) + 1;
@@ -133,4 +133,5 @@ function playAgain() {
 
 const restartBtn = document.querySelector('.result .restart');
 restartBtn.addEventListener('click', playAgain);
+
 
