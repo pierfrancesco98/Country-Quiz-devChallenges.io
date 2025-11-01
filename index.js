@@ -59,10 +59,10 @@ function showQuestion(index) {
         button.classList.add('active');
       };
       if (option === q.correct) {
-        addIcon(button, '/resources/Check_round_fill.svg');
+        addIcon(button, '/resources/Check-round-fill.svg');
       };
       if (option === q.selected && option !== q.correct) {
-        addIcon(button, '/resources/Close_round_fill.svg');
+        addIcon(button, '/resources/Close-round-fill.svg');
       };
     };
     button.addEventListener('click', () => {
@@ -148,6 +148,7 @@ function playAgain() {
 
 const restartBtn = document.querySelector('.result .restart');
 restartBtn.addEventListener('click', playAgain);
+
 
 
 
