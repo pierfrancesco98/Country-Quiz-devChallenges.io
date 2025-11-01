@@ -133,3 +133,4 @@ function playAgain() {
 
 const restartBtn = document.querySelector('.result .restart');
 restartBtn.addEventListener('click', playAgain);
+
