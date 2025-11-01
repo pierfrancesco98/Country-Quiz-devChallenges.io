@@ -15,6 +15,9 @@ section
    background-size: cover;
    min-height: 100vh; 
    position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .container {
     max-width: 900px;
@@ -167,3 +170,4 @@ width: 100%;            /* ogni bottone si adatta alla colonna */
     grid-template-columns: repeat(1,1fr);
   }
 }
+
