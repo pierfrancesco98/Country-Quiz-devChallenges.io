@@ -119,10 +119,25 @@ function playAgain() {
   const resultDiv = document.querySelector('.result');
   resultDiv.style.display = 'none';
   scoreElem.innerText = 0;
-  questions.forEach(q => {
-    q.answered = false;
-    q.selected = null;
-  });
+  questions = []; 
+  const usedCountries = new Set();
+  while (questions.length < maxQuestions) {
+    const randomCountry = countriesData[Math.floor(Math.random() * countriesData.length)];
+    if (usedCountries.has(randomCountry.name.common)) continue;
+    usedCountries.add(randomCountry.name.common);
+    const options = [randomCountry.capital[0]];
+    while (options.length < 4) {
+      const randomOption = countriesData[Math.floor(Math.random() * countriesData.length)].capital[0];
+      if (!options.includes(randomOption)) options.push(randomOption);
+    };
+    questions.push({
+      country: randomCountry.name.common,
+      correct: randomCountry.capital[0],
+      options: options.sort(() => Math.random() - 0.5),
+      answered: false,
+      selected: null
+    });
+  };
   progressSpans.forEach(span => {
     span.classList.remove('active');
   });
@@ -133,5 +148,6 @@ function playAgain() {
 
 const restartBtn = document.querySelector('.result .restart');
 restartBtn.addEventListener('click', playAgain);
+
 
 
