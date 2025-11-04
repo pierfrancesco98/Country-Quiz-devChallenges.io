@@ -88,7 +88,7 @@ h3 {
     margin-top: 40px;
 }
 .options .option {
-width: 100%;            /* ogni bottone si adatta alla colonna */
+width: 100%;              
   padding: 25px 30px;
   border-radius: 12px;
   background: #3b3e7a;
@@ -174,5 +174,6 @@ width: 100%;            /* ogni bottone si adatta alla colonna */
 }
 .result img {
     width: 100%;
+
 
 
